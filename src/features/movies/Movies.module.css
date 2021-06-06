@@ -1,0 +1,25 @@
+.movies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.movies .movie {
+  width: calc(50% - 10px);
+  padding: 5px;
+}
+
+.movie img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+}
+
+.title {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
