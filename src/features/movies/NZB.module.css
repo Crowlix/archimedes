@@ -1,0 +1,13 @@
+.title {
+
+}
+
+.resultList {
+    display: flex;
+    flex-direction: column;
+}
+
+.result {
+    background-color: var(--quick-silver);
+    margin: 4px 0;
+}
