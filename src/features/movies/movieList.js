@@ -40,5 +40,6 @@ export function MovieList() {
       e.stopPropagation();
 
         history.push(`/nzb/${q}`);
+        dispatch(fetchNZBAsync(q));
     }
 }

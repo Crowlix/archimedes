@@ -16,4 +16,12 @@ function fetchNZB(q) {
     });
 }
 
-export { fetchMovies, fetchNZB }
+function startNZB(url) {
+    return new Promise((resolve) => {
+        axios.post(`http://localhost:4500/start`, {nzb : {url : url}}).then(result => {
+            resolve({ data: result.data });
+        })
+    });
+}
+
+export { fetchMovies, fetchNZB, startNZB }

@@ -1,13 +1,56 @@
 .title {
-
+    font-size: 1.1rem;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80vw;
 }
 
+.fileSize {
+    color: var(--silver)
+}
 .resultList {
     display: flex;
     flex-direction: column;
+    padding: 8px;
 }
 
 .result {
-    background-color: var(--quick-silver);
+    border-bottom: 1px solid var(--quick-silver);
+    padding: 4px;
     margin: 4px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 11vh;
+}
+
+.downloadbar {
+    background-color: var(--laser-lemon);
+    height: 11vh;
+    padding: 4px;
+    margin: 4px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon {
+    height: 1rem;
+}
+
+span {
+    display: block;
+    margin: 4px 0;
+}
+
+.download {
+    height: 44px;
+}
+
+.downloadtitle {
+    font-size: 3rem;
+    color: var(--onyx);
 }
